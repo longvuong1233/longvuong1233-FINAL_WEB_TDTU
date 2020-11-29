@@ -264,7 +264,7 @@ var app5 = new Vue({
         setArrayListFindClass() {
             this.listFindClass = this.listClass.filter(ele => {
                 return (
-                    ele.id.math(this.id) &&
+                    ele.id.match(this.id) &&
                     ele.nameclass.match(this.name) &&
                     ele.part.match(this.part) &&
                     ele.title.match(this.title) &&
@@ -276,6 +276,7 @@ var app5 = new Vue({
 
     created() {
         myaxios.get("/classroom").then(response => {
+            console.log(response.data)
             this.listClass = [...response.data];
         });
     },

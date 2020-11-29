@@ -2372,7 +2372,7 @@ var app5 = new Vue({
       var _this9 = this;
 
       this.listFindClass = this.listClass.filter(function (ele) {
-        return ele.id.math(_this9.id) && ele.nameclass.match(_this9.name) && ele.part.match(_this9.part) && ele.title.match(_this9.title) && ele.room.match(_this9.room);
+        return ele.id.match(_this9.id) && ele.nameclass.match(_this9.name) && ele.part.match(_this9.part) && ele.title.match(_this9.title) && ele.room.match(_this9.room);
       });
     }
   },
@@ -2380,6 +2380,7 @@ var app5 = new Vue({
     var _this10 = this;
 
     myaxios.get("/classroom").then(function (response) {
+      console.log(response.data);
       _this10.listClass = _toConsumableArray(response.data);
     });
   },
@@ -2438,8 +2439,8 @@ var app6 = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\xampp\htdocs\ClassroomTDTU\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\xampp\htdocs\ClassroomTDTU\resources\css\app.css */"./resources/css/app.css");
+__webpack_require__(/*! C:\Users\Ha\Desktop\classroom\classroomtdtu\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Ha\Desktop\classroom\classroomtdtu\resources\css\app.css */"./resources/css/app.css");
 
 
 /***/ })
