@@ -1,0 +1,1 @@
+<img src="/img/logo.png" alt="logo" class="block h-15 w-auto">

@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Stream Class room file blade */
+
+.elementBorderAndShadow {
+    border: 1px solid #c0c0c0;
+    border-radius: 15px;
+    box-shadow: 2px 3px #c0c0c0;
+}
+
+.elementBorder {
+    border: 1px solid #c0c0c0;
+}
+
+.statusItem {
+    color: black;
+}
+
+.statusItem:hover {
+    text-decoration: none;
+}
+
+.statusItem:hover div {
+    background: #c0c0c0
+}
+
+.statusItem div {
+    border-radius: 12px;
+}
+
+
+/* Show Each Status Classroom File Blade */
+
+.imgThumbnail {
+    cursor: pointer;
+}
